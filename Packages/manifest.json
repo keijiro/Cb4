@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "com.unity.mathematics": "1.1.0",
+    "com.unity.render-pipelines.high-definition": "6.9.0-preview",
+    "jp.keijiro.ffmpeg-out": "https://github.com/keijiro/jp.keijiro.ffmpeg-out.git",
+    "jp.keijiro.klak.math": "https://github.com/keijiro/KlakMath.git#upm",
+    "jp.keijiro.neolowman": "https://github.com/keijiro/NeoLowMan.git#upm",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.director": "1.0.0",
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.physics2d": "1.0.0",
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.vr": "1.0.0"
+  },
+  "lock": {
+    "jp.keijiro.ffmpeg-out": {
+      "hash": "9c735fc1e81e4ac9a81dcf6d870471d80a1cc963",
+      "revision": "HEAD"
+    },
+    "jp.keijiro.klak.math": {
+      "hash": "4776a3fe8ca109d57fcd2c0b5cc874a664966270",
+      "revision": "upm"
+    },
+    "jp.keijiro.neolowman": {
+      "hash": "f5c336afd91398a640cf954e26ff06a64b551299",
+      "revision": "upm"
+    }
+  }
+}
