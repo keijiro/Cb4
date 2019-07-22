@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 95681197086748568}
   - component: {fileID: 114141661499983512}
   m_Layer: 0
-  m_Name: Dancer
+  m_Name: Line Dancer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,10 +67,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _footDistance: 0.3
-  _stepFrequency: 1.2333333
+  _stepFrequency: 0.6166665
   _stepHeight: 0.2
   _stepAngle: 120
-  _maxDistance: 1
+  _maxDistance: 0
   _hipHeight: 0.85
   _hipPositionNoise: 0.1
   _hipRotationNoise: 30
@@ -79,7 +79,7 @@ MonoBehaviour:
   _handPosition: {x: 0.3, y: 0.3, z: 0.3}
   _handPositionNoise: {x: 0.3, y: 0.3, z: 0.3}
   _headMove: 5
-  _noiseFrequency: 1.2333333
+  _noiseFrequency: 0.6166665
   _randomSeed: 123
 --- !u!1 &1262453578131682
 GameObject:

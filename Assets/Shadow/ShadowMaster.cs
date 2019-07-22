@@ -11,7 +11,7 @@ namespace Cb4
         [SerializeField, Range(1, 32)] int _shadowCount = 3;
         [SerializeField, Range(0.01f, 0.1f)] float _interval = 0.05f;
         [SerializeField, Range(0, 10)] float _offsetSpeed = 1;
-        [SerializeField] Material _material;
+        [SerializeField] Material _material = null;
 
         #endregion
 
