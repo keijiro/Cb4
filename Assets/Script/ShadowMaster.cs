@@ -14,8 +14,11 @@ namespace Cb4
             = new Queue<(Mesh, Matrix4x4, float)>();
         float _time;
 
+        MaterialPropertyBlock _props;
+
         void Start()
         {
+            _props = new MaterialPropertyBlock();
         }
 
         void Update()
@@ -30,10 +33,16 @@ namespace Cb4
 
             foreach (var shadow in _shadows)
             {
-                var offset = CalculateOffset(shadow.time);
+                var time = shadow.time;
+
+                var offset = CalculateOffset(time);
+
+                _props.SetFloat("_AlphaCutoff", Mathf.Clamp01((Time.time - time)*2));
+
                 Graphics.DrawMesh(
                     shadow.mesh, offset * shadow.matrix,
-                    _source.sharedMaterial, gameObject.layer
+                    _source.sharedMaterial, gameObject.layer,
+                    null, 0, _props
                 );
             }
         }
