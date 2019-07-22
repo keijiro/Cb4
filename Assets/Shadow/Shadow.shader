@@ -234,6 +234,9 @@ Shader "Cb4/Shadow"
     #pragma target 4.5
     #pragma only_renderers d3d11 ps4 xboxone vulkan metal switch
 
+    // Custom: Requires the geometry shader features.
+    #pragma require geometry
+
     //-------------------------------------------------------------------------------------
     // Variant
     //-------------------------------------------------------------------------------------
@@ -386,9 +389,11 @@ Shader "Cb4/Shadow"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipeline/ShaderPass/ShaderPassGBuffer.hlsl"
 
             // Custom: Custom shaders
-            #include "Fragment.hlsl"
-            #pragma vertex Vert
-            #pragma fragment Fragment
+            #include "Vertex.hlsl"
+            #include "Geometry.hlsl"
+            #pragma vertex Vertex
+            #pragma geometry Geometry
+            #pragma fragment Frag
 
             ENDHLSL
         }
@@ -418,9 +423,11 @@ Shader "Cb4/Shadow"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipeline/ShaderPass/ShaderPassDepthOnly.hlsl"
 
             // Custom: Custom shaders
-            #include "Fragment.hlsl"
-            #pragma vertex Vert
-            #pragma fragment Fragment
+            #include "Vertex.hlsl"
+            #include "Geometry.hlsl"
+            #pragma vertex Vertex
+            #pragma geometry Geometry
+            #pragma fragment Frag
 
             ENDHLSL
         }
@@ -464,9 +471,11 @@ Shader "Cb4/Shadow"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipeline/ShaderPass/ShaderPassDepthOnly.hlsl"
 
             // Custom: Custom shaders
-            #include "Fragment.hlsl"
-            #pragma vertex Vert
-            #pragma fragment Fragment
+            #include "Vertex.hlsl"
+            #include "Geometry.hlsl"
+            #pragma vertex Vertex
+            #pragma geometry Geometry
+            #pragma fragment Frag
 
             ENDHLSL
         }
