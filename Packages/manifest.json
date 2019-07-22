@@ -2,10 +2,13 @@
   "dependencies": {
     "com.unity.mathematics": "1.1.0",
     "com.unity.render-pipelines.high-definition": "6.9.0-preview",
+    "com.unity.timeline": "1.1.0",
     "jp.keijiro.ffmpeg-out": "https://github.com/keijiro/jp.keijiro.ffmpeg-out.git",
     "jp.keijiro.klak.math": "https://github.com/keijiro/KlakMath.git#upm",
     "jp.keijiro.klak.motion": "https://github.com/keijiro/ProceduralMotion.git#upm",
     "jp.keijiro.klak.ndi": "https://github.com/keijiro/KlakNDI.git#upm",
+    "jp.keijiro.klak.timeline.midi": "https://github.com/keijiro/MidiAnimationTrack.git#upm",
+    "jp.keijiro.klak.timeline.procedural-motion": "https://github.com/keijiro/ProceduralMotionTrack.git#upm",
     "jp.keijiro.neolowman": "https://github.com/keijiro/NeoLowMan.git#upm",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.director": "1.0.0",
@@ -32,6 +35,14 @@
     },
     "jp.keijiro.klak.ndi": {
       "hash": "2489b981f9c740977e1db7d9601e6b52b472ba03",
+      "revision": "upm"
+    },
+    "jp.keijiro.klak.timeline.midi": {
+      "hash": "45e1260ae94fa65112c6a3fec07b0ed8ce7d58cf",
+      "revision": "upm"
+    },
+    "jp.keijiro.klak.timeline.procedural-motion": {
+      "hash": "828b6789f54a80d7ea5e1897b13e489299ebad9b",
       "revision": "upm"
     },
     "jp.keijiro.neolowman": {
